@@ -111,3 +111,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f547ed0944fe2914d950523aa8c2b72b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  colorChangeButton: {fileID: 0}
+  colorInputField: {fileID: 0}
+  rendererComponent: {fileID: 23576030874978725}
