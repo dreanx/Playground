@@ -1,4 +1,7 @@
 using UnityEngine;
+// Script attached to the Player
+// PuRef = Empty
+// PrRef = float moveSpeed
 
 public class Player : MonoBehaviour
 {

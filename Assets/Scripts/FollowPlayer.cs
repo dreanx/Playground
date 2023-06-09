@@ -1,4 +1,7 @@
 using UnityEngine;
+// Script attached to Main Camera
+// PuRef = Transform player ; Vector3 offsetCamera
+// PrRef = ***
 
 public class FollowPlayer : MonoBehaviour
 {

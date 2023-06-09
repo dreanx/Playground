@@ -1,6 +1,10 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+// Script attached to the Enemy Prefab
+// PuRef = Button colorChangeButton ; InputField colorInputField
+// PrRef = Renderer rendererComponent
+
 public class Enemy : MonoBehaviour
 {
     public static Color sharedColor; // Static field representing the shared color for all enemy instances
