@@ -432,8 +432,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Play!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -457,8 +457,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 35
+  m_fontSizeBase: 35
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -521,7 +521,6 @@ GameObject:
   - component: {fileID: 1392670446}
   - component: {fileID: 1392670445}
   - component: {fileID: 1392670444}
-  - component: {fileID: 1392670450}
   m_Layer: 5
   m_Name: MainMenu
   m_TagString: Untagged
@@ -542,7 +541,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.44716978, g: 0.5120729, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.34999514, a: 0.38431373}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -650,18 +649,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1392670450
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1392670443}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d119bdc56b57ab45a91bb7d0d24e241, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1563979373
 GameObject:
   m_ObjectHideFlags: 0
@@ -742,6 +729,7 @@ GameObject:
   - component: {fileID: 2077255430}
   - component: {fileID: 2077255429}
   - component: {fileID: 2077255428}
+  - component: {fileID: 2077255431}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -814,7 +802,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1392670450}
+      - m_Target: {fileID: 2077255431}
         m_TargetAssemblyTypeName: PlayButton, Assembly-CSharp
         m_MethodName: StartGame
         m_Mode: 1
@@ -864,3 +852,15 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2077255425}
   m_CullTransparentMesh: 1
+--- !u!114 &2077255431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2077255425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d119bdc56b57ab45a91bb7d0d24e241, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

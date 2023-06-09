@@ -1,4 +1,5 @@
 using UnityEngine;
+
 // Script attached to Minimap Camera (changed into a material renderer)
 // PuRef = Transform player
 // PrRef = ***
