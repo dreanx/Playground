@@ -2,12 +2,12 @@ using UnityEngine;
 
 public class MinimapCamera : MonoBehaviour
 {
-    public Transform player;
+    public Transform player; // Reference to the player object's transform
 
     private void LateUpdate()
     {
-        Vector3 newPos = player.transform.position;
-        newPos.y = transform.position.y;
-        transform.position = newPos;
+        Vector3 newPos = player.transform.position; // Get the current position of the player
+        newPos.y = transform.position.y; // Keep the same Y position as the minimap camera
+        transform.position = newPos; // Set the new position of the minimap camera
     }
 }
