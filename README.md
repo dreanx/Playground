@@ -1,4 +1,4 @@
 My C# Unity playground
 
-1. Minimap Simple Script + simple movement (ZQSD movement)
+1. Minimap Simple Script + simple movement (ZQSD movement) + Game Menu with Button Onclick event that loads nexscene (lauch game)
 2. First Person Controller for camera and movement (3D) (mouseX and mouseY movement)
