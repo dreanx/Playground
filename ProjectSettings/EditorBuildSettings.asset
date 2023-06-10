@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/2. First Person Movement FPS Controller (Brackey's) 1.unity
+    guid: 631497c08016a9b4b96a8c3e8d432ecc
+  - enabled: 1
     path: Assets/Scenes/0. MainMenu.unity
     guid: 7f79964552f81a742a589a850176285b
   - enabled: 1
