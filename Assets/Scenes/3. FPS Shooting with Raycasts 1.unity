@@ -685,8 +685,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterController: {fileID: 735102412}
-  speed: 10
-  gravity: -20
+  speed: 12
+  gravity: -15
   jumpHeight: 2
   groundCheck: {fileID: 925626824}
   groundDistance: 0.4
@@ -1019,7 +1019,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13ab2dff2d32de14ea4bd52efa12738d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseSensitivity: 180
+  mouseSensitivity: 150
   playerBody: {fileID: 735102413}
 --- !u!4 &1256327687 stripped
 Transform:
