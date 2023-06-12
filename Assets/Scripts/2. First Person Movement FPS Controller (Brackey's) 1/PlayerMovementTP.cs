@@ -1,4 +1,5 @@
 using UnityEngine;
+// Attached to the player GO (parent)
 
 public class PlayerMovementTP : MonoBehaviour
 {

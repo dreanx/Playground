@@ -1,4 +1,5 @@
 using UnityEngine;
+// Attached to the Camera (child)
 
 public class MouseLookTP : MonoBehaviour
 {
