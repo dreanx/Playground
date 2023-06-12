@@ -30,9 +30,8 @@ public class PlayerMovementTP : MonoBehaviour
         float x = Input.GetAxis("Horizontal");  // Get input value for horizontal movement (left/right)
         float z = Input.GetAxis("Vertical");  // Get input value for vertical movement (forward/backward)
 
-        // (MOVE) Calculate the movement vector based on input values and player's orientation
-        Vector3 direction = transform.right * x + transform.forward * z; // Outputs a vector3(x,0,z) representing the direction we want to move
-
+        // (MOVE) Calculate the direction vector3(x,0,z) based on input values and player's orientation
+        Vector3 direction = transform.right * x + transform.forward * z;
         // (MOVE) Move the character controller based on the calculated movement vector and speed
         characterController.Move(direction * speed * Time.deltaTime);
 
