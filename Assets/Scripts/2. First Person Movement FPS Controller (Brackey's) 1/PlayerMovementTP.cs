@@ -31,10 +31,10 @@ public class PlayerMovementTP : MonoBehaviour
         float z = Input.GetAxis("Vertical");  // Get input value for vertical movement (forward/backward)
 
         // (MOVE) Calculate the movement vector based on input values and player's orientation
-        Vector3 move = transform.right * x + transform.forward * z;
+        Vector3 direction = transform.right * x + transform.forward * z; // Outputs a vector3(x,0,z) representing the direction we want to move
 
         // (MOVE) Move the character controller based on the calculated movement vector and speed
-        characterController.Move(move * speed * Time.deltaTime);
+        characterController.Move(direction * speed * Time.deltaTime);
 
         // (JUMP) Check if the Jump button is pressed and the player is grounded
         if (Input.GetButtonDown("Jump") && isGrounded)
