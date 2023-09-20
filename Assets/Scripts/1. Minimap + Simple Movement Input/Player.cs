@@ -6,9 +6,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    private float moveSpeed = 5f; // Speed at which the player moves
-    private Rigidbody testSpeed;
-
+    private float moveSpeed = 5f; // Speed at which the player movesX
 
     public void Update()
     {
@@ -34,8 +32,9 @@ public class Player : MonoBehaviour
             inputVector.x -= 1; // Decrease the x component of the input vector
         }
 
+        inputVector = inputVector.normalized; // Normalize the input vector to ensure consistent speed in all directions
         Vector3 moveDir = new Vector3(inputVector.x, 0f, inputVector.y); // Create a movement direction vector
-        //inputVector = inputVector.normalized; // Normalize the input vector to ensure consistent speed in all directions
+   
 
         transform.position += moveSpeed * Time.deltaTime * moveDir; // Move the player in the calculated direction at a constant speed
     }
